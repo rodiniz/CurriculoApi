@@ -3,7 +3,7 @@ using TesteSharepointNovo.Models;
 
 namespace curriculoapi.Model
 {
-    public class Tecnologia
+    public class Tecnologia:IEntity
     {
         [Key]
 

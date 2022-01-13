@@ -4,10 +4,11 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using curriculoapi.Model;
 
 namespace TesteSharepointNovo.Models
 {
-    public class Lingua
+    public class Lingua:IEntity
     {
         [Key]
       

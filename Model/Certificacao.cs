@@ -3,7 +3,7 @@ using TesteSharepointNovo.Models;
 
 namespace curriculoapi.Model
 {
-    public class Certificacao
+    public class Certificacao:IEntity
     {
         [Key]
 
@@ -16,6 +16,6 @@ namespace curriculoapi.Model
 
         public byte[] Logo { get; set; }
 
-        public Curriculo Curriculo { get; set; }
+        public virtual Curriculo Curriculo { get; set; }
     }
 }

@@ -1,25 +1,26 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using curriculoapi.Model;
 
 namespace TesteSharepointNovo.Models
 {
-    public class Curriculo
+    public class Curriculo:IEntity
     {
 
         public int Id { get; set; }
 
         public int UserId { get; set; }
 
-        [Display(Name = "Endereço")]
+      
         public string Endereco { get; set; }
 
-        [Required(ErrorMessage = "Preencha a nacionalidade")]
+        
         public string Nacionalidade { get; set; }
 
-        [Required(ErrorMessage = "Preencha a naturalidade")]
+      
         public string Naturalidade { get; set; }
 
-        [Required(ErrorMessage = "Preencha o estado civil")]
+       
         public string EstadoCivil { get; set; }
 
         public DateTime? DataNascimento { get; set; }
